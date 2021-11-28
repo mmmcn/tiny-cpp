@@ -1,0 +1,9 @@
+#ifndef _SMART_PTR_H_
+#define _SMART_PTR_H_
+
+#include "counter.hpp"
+#include "weak_ptr.hpp"
+#include "shared_ptr.hpp"
+
+#endif // !_SMART_PTR_H_
+
