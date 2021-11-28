@@ -1,7 +1,7 @@
 Simple implementation of smart pointer  
 - [x] shared_ptr
 - [x] weak_ptr
-- [] unique_ptr
+- [ ] unique_ptr
 
 # Environment
  -Ubuntu 16.04
