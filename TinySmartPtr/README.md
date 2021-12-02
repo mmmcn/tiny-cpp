@@ -1,12 +1,12 @@
 Simple implementation of smart pointer  
 - [x] shared_ptr
 - [x] weak_ptr
-- [ ] unique_ptr
+- [x] unique_ptr
 
 # Environment
- -Ubuntu 16.04
- -make 4.2
- -g++ 7.5.0
+ - Ubuntu 16.04
+ - make 4.2
+ - g++ 7.5.0
 
  **When using g++5, specify -std=c++11 in the makefile does not work, I am still not sure if g++5 was the cause, but when I upgraded to g++7, the problem disappeared.**  
 

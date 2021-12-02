@@ -4,6 +4,7 @@
 #include "counter.hpp"
 #include "weak_ptr.hpp"
 #include "shared_ptr.hpp"
+#include "unique_ptr.hpp"
 
 #endif // !_SMART_PTR_H_
 

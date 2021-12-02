@@ -45,8 +45,31 @@ void test_weak_ptr() {
     std::cout << "number of reference for sp2: " << sp2.count() << std::endl;
 }
 
+
+void test_unique_ptr() {
+	/* not support
+	UniquePtr<double> a1(new double(10.0));
+	UniquePtr<double> a2(a1);
+	UniquePtr<double> a3 = a1;
+	UniquePtr<double> a4;
+	a4 = a1;
+	*/
+
+	int* naive_ptr = new int(10);
+	std::cout << "the memory address of naive_ptr points to: " << naive_ptr << std::endl;
+
+	UniquePtr<int> p1(naive_ptr);
+	std::cout << "*p1: " << *p1 << std::endl;
+
+	UniquePtr<int> p2(p1.release());
+	std::cout << (p1.get() == nullptr ? "revoke p1's control over naive_ptr" : "failed") << std::endl;
+	std::cout << "*p2: " << *p2 << std::endl;
+}
+
+
 int main() {
     //test_shared_ptr();
-    test_weak_ptr();
+    //test_weak_ptr();
+	test_unique_ptr();
     std::cin.get();
 }
